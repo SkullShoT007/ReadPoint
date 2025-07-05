@@ -32,7 +32,7 @@ export const ProductList = () => {
         
       }
       fetchProducts()
-    }, [searchParam])
+    }, [searchParam]) // eslint-disable-line
   return (
     <main>
         <section className="my-5">
