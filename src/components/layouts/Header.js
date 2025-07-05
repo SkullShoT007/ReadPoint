@@ -1,11 +1,12 @@
 import {Link, useNavigate} from "react-router-dom"
 import LightLogo from "../assets/light-Logo.png"
 import DarkLogo from "../assets/dark-logo.png"
+import { useCart } from "../../context"
 import {  useState } from "react"
 import { Search } from "./sections/Search"
 import { DropDownLoggedIn } from "../elements/DropDownLoggedIn"
 import { DropDownLoggedOut } from "../elements/DropDownLoggedOut"
-import { useCart } from "../../context"
+
 export const Header = () => {
     const {cartList } = useCart()
     const navigate = useNavigate()
